@@ -1,0 +1,16 @@
+{
+  "name": "angular-requirejs",
+  "version": "1.0.0",
+  "description": "applying angular x angular and requirejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ciro Ferreira da Cruz",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}

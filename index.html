@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>Angular RequireJS</title>
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="app.js"></script>
+	<script src="aboutController.js"></script>
+	<script src="contactController.js"></script>
+</head>
+<body ng-app="app">
+	<a ui-sref="index">index</a>
+	<a ui-sref="about">about</a>
+	<a ui-sref="contact">contact</a>
+	<div ui-view></div>
+</body>
+</html>

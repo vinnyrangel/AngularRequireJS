@@ -1,0 +1,25 @@
+{
+  "name": "angular-requirejs",
+  "description": "applying angular x angular and requirejs",
+  "main": "index.js",
+  "authors": [
+    "Ciro Ferreira da Cruz"
+  ],
+  "license": "ISC",
+  "moduleType": [
+    "amd",
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.9",
+    "angular-ui-router": "~0.2.17"
+  }
+}
