@@ -1,21 +1,8 @@
-angular.module('app', ['ui.router.state', 'aboutController', 'contactController'])
+define('app', ['routes', 'aboutController', 'contactController'], function(routes, aboutController, contactController){
+	'use strict';
 
-.config(function($stateProvider, $locationProvider, $urlRouterProvider){
-	$stateProvider
-		.state('index', {
-			url:'/'
-		})
-		.state('about', {
-			url: '/about',
-			templateUrl: '/templates/about.html',
-			controller: 'aboutCtrl'
-		})
-		.state('contact', {
-			url: '/contact',
-			templateUrl: '/templates/contact.html',
-			controller: 'contactCtrl'
-		});
-
-	$locationProvider.html5Mode(true);
-	$urlRouterProvider.otherwise('/');
+	var app = angular.module('app', ['ui.router.state']);
+	app.config(routes);
+	app.controller('aboutController', aboutController);
+	app.controller('contactController', contactController);
 });

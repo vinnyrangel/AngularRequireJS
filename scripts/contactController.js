@@ -1,4 +1,11 @@
-angular.module('contactController', [])
-.controller('contactCtrl', function($scope){
-  $scope.message = 'state contact';
+define('contactController', [], function(){
+	'use strict';
+
+	function contactCtrl($scope){
+		$scope.message = 'state contact';
+	}
+
+	contactCtrl.$inject=['$scope'];
+
+	return contactCtrl;
 });
