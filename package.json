@@ -1,13 +1,21 @@
 {
   "name": "angular-requirejs",
   "version": "1.0.0",
-  "description": "applying angular x angular and requirejs",
+  "description": "Applying AngularJS x AngularJS and RequireJS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cirocfc/AngularRequireJS.git"
+  },
   "author": "Ciro Ferreira da Cruz",
-  "license": "ISC",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cirocfc/AngularRequireJS/issues"
+  },
+  "homepage": "https://github.com/cirocfc/AngularRequireJS#readme",
   "dependencies": {
   },
   "devDependencies": {

@@ -1,19 +1,21 @@
 angular.module('app', ['ui.router.state', 'aboutController', 'contactController'])
 
-.config(function($stateProvider, $urlRouterProvider){
+.config(function($stateProvider, $locationProvider, $urlRouterProvider){
 	$stateProvider
 		.state('index', {
 			url:'/'
 		})
 		.state('about', {
 			url: '/about',
-			templateUrl: 'about.html',
+			templateUrl: '/templates/about.html',
 			controller: 'aboutCtrl'
 		})
 		.state('contact', {
 			url: '/contact',
-			templateUrl: 'contact.html',
+			templateUrl: '/templates/contact.html',
 			controller: 'contactCtrl'
 		});
+
+	$locationProvider.html5Mode(true);
 	$urlRouterProvider.otherwise('/');
 });
