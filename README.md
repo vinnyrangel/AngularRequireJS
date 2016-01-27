@@ -6,9 +6,8 @@ This repo is part of a challenge that consists of developing two simple single p
 
 ---
 
-#Running:
-Download repo and run:
+##Running:
 
-bower install
-npm install
-node .
+* Download bower dependencies: `bower install`
+* Download npm dependencies: `npm install`
+* Start server: `node .`
