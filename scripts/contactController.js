@@ -1,11 +1,6 @@
-define('contactController', [], function(){
+define(['app'], function(app){
 	'use strict';
-
-	function contactCtrl($scope){
+	app.controller('contactController', function($scope){
 		$scope.message = 'state contact';
-	}
-
-	contactCtrl.$inject=['$scope'];
-
-	return contactCtrl;
+	});
 });

@@ -1,9 +1,8 @@
-define('app', ['angular', 'uiRouter', 'routes', 'aboutController', 'contactController'],
-	function(angular, uiRouter, routes, aboutController, contactController){
+define(['angularAMD', 'routes', 'uiRouter'], function(angularAMD, routes){
 	'use strict';
-
 	var app = angular.module('app', ['ui.router']);
+
 	app.config(routes);
-	app.controller('aboutController', aboutController);
-	app.controller('contactController', contactController);
+
+	return angularAMD.bootstrap(app);
 });

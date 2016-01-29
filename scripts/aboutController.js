@@ -1,11 +1,6 @@
-define('aboutController', [], function(){
+define(['app'], function(app){
 	'use strict';
-
-	function aboutCtrl($scope){
+	app.controller('aboutController', function($scope){
 		$scope.message = 'state about';
-	}
-
-	aboutCtrl.$inject=['$scope'];
-
-	return aboutCtrl;
+	});
 });

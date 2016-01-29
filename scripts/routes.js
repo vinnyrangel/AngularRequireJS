@@ -1,25 +1,23 @@
-define('routes', [], function(){
+define(['angularAMD'], function(angularAMD){
 	'use strict';
 
 	function routes($stateProvider, $urlRouterProvider){
 		$stateProvider
-			.state('index', {
+			.state('index', angularAMD.route({
 				url:'/'
-			})
-			.state('about', {
+			}))
+			.state('about', angularAMD.route({
 				url: '/about',
 				templateUrl: '/templates/about.html',
 				controller: 'aboutController'
-			})
-			.state('contact', {
+			}))
+			.state('contact', angularAMD.route({
 				url: '/contact',
 				templateUrl: '/templates/contact.html',
 				controller: 'contactController'
-			});
+			}));
 		$urlRouterProvider.otherwise('/');
 	}
-
-	routes.$inject=['$stateProvider', '$urlRouterProvider'];
 
 	return routes;
 });

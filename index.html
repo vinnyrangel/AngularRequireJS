@@ -4,15 +4,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 
-	<script src="/bower_components/requirejs/require.js"></script>
-	<script src="/scripts/main.js"></script>
+	<script data-main="/scripts/main.js" src="/bower_components/requirejs/require.js"></script>
 
 	<title>Angular RequireJS</title>
 </head>
 <body>
+	<div ui-view></div>
 	<a ui-sref="index">index</a>
 	<a ui-sref="about">about</a>
 	<a ui-sref="contact">contact</a>
-	<div ui-view></div>
 </body>
 </html>
