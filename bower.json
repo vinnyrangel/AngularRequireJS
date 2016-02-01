@@ -1,7 +1,7 @@
 {
   "name": "angular-requirejs",
   "description": "applying angular x angular and requirejs",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "authors": [
     "Ciro Ferreira da Cruz"
   ],

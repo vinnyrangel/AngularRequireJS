@@ -8,14 +8,15 @@ define(['angularAMD'], function(angularAMD){
 			}))
 			.state('about', angularAMD.route({
 				url: '/about',
-				templateUrl: '/templates/about.html',
+				templateUrl: '/app/templates/about.html',
 				controller: 'aboutController'
 			}))
 			.state('contact', angularAMD.route({
 				url: '/contact',
-				templateUrl: '/templates/contact.html',
+				templateUrl: '/app/templates/contact.html',
 				controller: 'contactController'
 			}));
+
 		$urlRouterProvider.otherwise('/');
 	}
 

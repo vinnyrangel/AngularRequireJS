@@ -7,10 +7,10 @@
 			'angularAMD': '/bower_components/angularAMD/angularAMD',
 			'uiRouter': '/bower_components/angular-ui-router/release/angular-ui-router.min',
 
-			'app': '/scripts/app',
-			'routes': '/scripts/routes',
-			'aboutController': '/scripts/aboutController',
-			'contactController': '/scripts/contactController'
+			'app': '/app/app',
+			'routes': '/app/routes',
+			'aboutController': '/app/controllers/aboutController',
+			'contactController': '/app/controllers/contactController'
 		},
 		shim: {
 			'angular': {

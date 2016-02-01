@@ -8,6 +8,6 @@ This repo is part of a challenge that consists of developing two simple single p
 
 ##Running:
 
-* Download bower dependencies: `bower install`
 * Download npm dependencies: `npm install`
-* Start server: `node .`
+* Download bower dependencies: `bower install`
+* Start server: `gulp`
