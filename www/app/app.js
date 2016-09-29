@@ -1,6 +1,6 @@
-define(['angularAMD', 'routes', 'uiRouter'], function(angularAMD, routes){
+define(['angularAMD', 'routes', 'uiRouter', 'outsideModule', 'otherModule' ], function(angularAMD, routes){
 	'use strict';
-	var app = angular.module('app', ['ui.router']);
+	var app = angular.module('app', ['ui.router', 'outsideModule', 'otherModule']);
 
 	app.config(routes);
 

@@ -15,7 +15,17 @@ define(['angularAMD'], function(angularAMD){
 				url: '/contact',
 				templateUrl: '/app/templates/contact.html',
 				controller: 'contactController'
-			}));
+			}))
+			.state('outside', {
+				url: '/outside',
+				templateUrl: '/outside/template.html',
+				controller: 'outsideController'
+			})
+			.state('other', {
+				url: '/other',
+				templateUrl: '/other/template.html',
+				controller: 'otherController'
+			});
 
 		$urlRouterProvider.otherwise('/');
 	}
