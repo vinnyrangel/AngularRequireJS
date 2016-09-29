@@ -18,12 +18,12 @@ define(['angularAMD'], function(angularAMD){
 			}))
 			.state('outside', {
 				url: '/outside',
-				templateUrl: '/outside/template.html',
+				templateUrl: '/modules/outside/template.html',
 				controller: 'outsideController'
 			})
 			.state('other', {
 				url: '/other',
-				templateUrl: '/other/template.html',
+				templateUrl: '/modules/other/template.html',
 				controller: 'otherController'
 			});
 

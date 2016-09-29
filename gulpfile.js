@@ -13,14 +13,14 @@
 		connect.server({
 			host: 'localhost',
 			port: 8000,
-			root: ['.', 'www']
+			root: ['.', 'src']
 		});
 
 		open('http://localhost:8000');
 	});
 
 	gulp.task('lintJS', function() {
-		gulp.src('www/**/*.js')
+		gulp.src('src/**/*.js')
 			.pipe(jshint())
 			.pipe(jshint.reporter('default'))
 			.pipe(jshint.reporter('fail'));
@@ -31,11 +31,11 @@
 	});
 
 	gulp.task('createModules', function(){
-		gulp.src(['www/outside/outsideModule.js', 'www/outside/**/*.js'])
+		gulp.src(['src/modules/outside/outsideModule.js', 'src/modules/outside/**/*.js'])
 			.pipe(concat('outsideModule.js'))
 			.pipe(gulp.dest('dist'));
 
-		gulp.src(['www/other/otherModule.js', 'www/other/**/*.js'])
+		gulp.src(['src/modules/other/otherModule.js', 'src/modules/other/**/*.js'])
 			.pipe(concat('otherModule.js'))
 			.pipe(gulp.dest('dist'));
 	});
